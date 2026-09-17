@@ -1,0 +1,2 @@
+import { PortalShell } from '@/components/portal-shell';
+export default function AdminDashboard(){return <PortalShell type="admin" title="Dashboard"><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{[['Locais ativos','428'],['Pendentes','37'],['Parceiros','24'],['Denúncias abertas','12']].map(([a,b])=><div key={a} className="rounded-[20px] border border-akola-border bg-white p-5"><p className="text-sm text-akola-muted">{a}</p><p className="mt-3 text-3xl font-semibold">{b}</p></div>)}</div></PortalShell>}

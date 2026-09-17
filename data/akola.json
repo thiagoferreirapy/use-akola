@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": "usr_9e9d7d72-2899-4da9-b66f-0457f57c0d7a",
+      "name": "Usuário Demo",
+      "email": "demo@useakola.app",
+      "passwordHash": "57e219de50f24a816aa571144dcc0b16:a08050445fc28d51afe65cc0d4e69373ecbcfa97c43572bec1ab98c4aa523088461b461294042027da2a29ad49873688f2c91ab7dd6e221257a4f0356d69d037",
+      "role": "USER",
+      "reputationScore": 0,
+      "createdAt": "2026-09-15T19:27:11.247Z"
+    },
+    {
+      "id": "usr_ca482a5f-1a95-4c29-828e-13329df322a8",
+      "name": "Responsável Bellini",
+      "email": "parceiro@useakola.app",
+      "phone": "",
+      "passwordHash": "1605e68862221eab97d654a494c6ca23:3ce070e0b267032fd14270e29486c6ce01a1d954bb26750dfe632292976bb1df7e1295f463804b59c6830ec04b0ab1cadc4e548b6e6a4f6781a89c2d5909fc51",
+      "role": "BUSINESS",
+      "reputationScore": 0,
+      "createdAt": "2026-09-15T20:02:24.395Z"
+    }
+  ],
+  "places": [
+    {
+      "id": "padaria-bellini",
+      "name": "Padaria Bellini",
+      "description": "Ponto Akolá com banheiro, água potável e acesso facilitado.",
+      "category": "Padaria",
+      "address": "CLS 107, Brasília - DF",
+      "latitude": -15.7975,
+      "longitude": -47.8919,
+      "status": "PUBLISHED",
+      "ownershipStatus": "CLAIMED",
+      "partnerTier": "PARTNER",
+      "services": [
+        "toilet",
+        "water",
+        "accessible"
+      ],
+      "access": "Acesso gratuito · entrada lateral",
+      "openNow": true,
+      "rating": 4.8,
+      "distanceMeters": 280,
+      "walkMinutes": 3,
+      "trustState": "partner",
+      "lastConfirmed": "há 18 min",
+      "ownerUserId": "usr_ca482a5f-1a95-4c29-828e-13329df322a8"
+    },
+    {
+      "id": "cafe-ernesto",
+      "name": "Café Ernesto",
+      "description": "Café parceiro com estrutura de apoio e oferta ativa.",
+      "category": "Cafeteria",
+      "address": "SQS 308, Brasília - DF",
+      "latitude": -15.8104,
+      "longitude": -47.8891,
+      "status": "PUBLISHED",
+      "ownershipStatus": "CLAIMED",
+      "partnerTier": "PARTNER",
+      "services": [
+        "toilet",
+        "water"
+      ],
+      "access": "Gratuito para visitantes",
+      "openNow": true,
+      "rating": 4.9,
+      "distanceMeters": 620,
+      "walkMinutes": 6,
+      "trustState": "recent",
+      "lastConfirmed": "há 42 min"
+    },
+    {
+      "id": "posto-central",
+      "name": "Posto Central",
+      "description": "Ponto adicionado pela comunidade.",
+      "category": "Posto de combustível",
+      "address": "Eixo W, Brasília - DF",
+      "latitude": -15.803,
+      "longitude": -47.895,
+      "status": "PUBLISHED",
+      "ownershipStatus": "UNCLAIMED",
+      "partnerTier": "COMMUNITY",
+      "services": [
+        "toilet",
+        "accessible"
+      ],
+      "access": "Banheiro gratuito",
+      "openNow": true,
+      "rating": 4.6,
+      "distanceMeters": 490,
+      "walkMinutes": 5,
+      "trustState": "community",
+      "lastConfirmed": "hoje às 10:24"
+    },
+    {
+      "name": "Mercadinho rende mais",
+      "address": "Quadra 111 conjunto 01 lote 3 recanto das emas Brasília - Df 72602401",
+      "access": "Gratuito",
+      "hours": "Seg a sabado",
+      "notes": "Teste",
+      "photoName": "image.jpg",
+      "id": "plc_a8e506de-df54-4c5f-aca2-4f62e629319a",
+      "createdByUserId": "usr_9e9d7d72-2899-4da9-b66f-0457f57c0d7a",
+      "status": "PENDING",
+      "ownershipStatus": "UNCLAIMED",
+      "partnerTier": "COMMUNITY",
+      "createdAt": "2026-09-15T20:39:44.589Z"
+    }
+  ],
+  "confirmations": [],
+  "reviews": [],
+  "favorites": [
+    {
+      "id": "fav_d4e44c1a-7623-42f8-a05c-33574226d30d",
+      "userId": "usr_9e9d7d72-2899-4da9-b66f-0457f57c0d7a",
+      "placeId": "padaria-bellini",
+      "createdAt": "2026-09-15T19:27:11.431Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm_b7eeabb5-887b-459e-880b-9926b89a5709",
+      "placeId": "padaria-bellini",
+      "userId": "usr_ca482a5f-1a95-4c29-828e-13329df322a8",
+      "status": "APPROVED",
+      "createdAt": "2026-09-15T20:02:24.612Z"
+    }
+  ],
+  "offers": [
+    {
+      "id": "cafe-pao",
+      "placeId": "padaria-bellini",
+      "title": "Café + pão de queijo",
+      "description": "Combo especial Akolá",
+      "discountType": "FIXED_PRICE",
+      "discountValue": 9.9,
+      "price": "R$ 9,90",
+      "validUntil": "Hoje, 20h",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "agua-cafe",
+      "placeId": "cafe-ernesto",
+      "title": "15% em bebidas geladas",
+      "description": "Desconto em bebidas",
+      "discountType": "PERCENT",
+      "discountValue": 15,
+      "price": "15% OFF",
+      "validUntil": "Até domingo",
+      "status": "ACTIVE"
+    }
+  ],
+  "visits": [
+    {
+      "id": "vst_e1c81f75-c757-4bfc-9165-1c7d6624d815",
+      "placeId": "cafe-ernesto",
+      "userId": "usr_9e9d7d72-2899-4da9-b66f-0457f57c0d7a",
+      "source": "mapa",
+      "routeStartedAt": "2026-09-15T20:48:37.467Z"
+    }
+  ],
+  "redemptions": [],
+  "reports": []
+}

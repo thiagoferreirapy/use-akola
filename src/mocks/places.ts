@@ -1,0 +1,81 @@
+import type { Place } from '@/types/place';
+
+export const places: Place[] = [
+  {
+    id: 'padaria-bellini',
+    name: 'Padaria Bellini',
+    category: 'Padaria',
+    latitude: -15.7975,
+    longitude: -47.8919,
+    distanceMeters: 280,
+    walkMinutes: 3,
+    openNow: true,
+    rating: 4.8,
+    address: 'CLS 107, Brasília - DF',
+    access: 'Acesso gratuito · entrada lateral',
+    services: ['toilet', 'water', 'accessible'],
+    trustState: 'partner',
+    lastConfirmed: 'há 18 min',
+    partner: true,
+    description: 'Ponto Akolá com banheiro, água potável e acesso facilitado.'
+  },
+  {
+    id: 'cafe-ernesto',
+    name: 'Café Ernesto',
+    category: 'Cafeteria',
+    latitude: -15.8104,
+    longitude: -47.8891,
+    distanceMeters: 620,
+    walkMinutes: 6,
+    openNow: true,
+    rating: 4.9,
+    address: 'SQS 308, Brasília - DF',
+    access: 'Gratuito para visitantes',
+    services: ['toilet', 'water'],
+    trustState: 'recent',
+    lastConfirmed: 'há 42 min',
+    partner: true,
+    description: 'Café parceiro com estrutura de apoio e oferta ativa.'
+  },
+  {
+    id: 'posto-central',
+    name: 'Posto Central',
+    category: 'Posto de combustível',
+    latitude: -15.803,
+    longitude: -47.895,
+    distanceMeters: 490,
+    walkMinutes: 5,
+    openNow: true,
+    rating: 4.6,
+    address: 'Eixo W, Brasília - DF',
+    access: 'Banheiro gratuito',
+    services: ['toilet', 'accessible'],
+    trustState: 'community',
+    lastConfirmed: 'hoje às 10:24',
+    partner: false,
+    description: 'Ponto adicionado pela comunidade.'
+  },
+  {
+    id: 'shopping-sul',
+    name: 'Shopping Sul',
+    category: 'Shopping',
+    latitude: -15.7992,
+    longitude: -47.8828,
+    distanceMeters: 1100,
+    walkMinutes: 8,
+    openNow: true,
+    rating: 4.5,
+    address: 'Asa Sul, Brasília - DF',
+    access: 'Acesso público durante o horário do shopping',
+    services: ['toilet', 'water', 'accessible', 'changing'],
+    trustState: 'old',
+    lastConfirmed: 'há 12 dias',
+    partner: false,
+    description: 'Estrutura ampla, com banheiro acessível e fraldário.'
+  },
+];
+
+export const offers = [
+  { id: 'cafe-pao', placeId: 'padaria-bellini', title: 'Café + pão de queijo', price: 'R$ 9,90', validUntil: 'Hoje, 20h' },
+  { id: 'agua-cafe', placeId: 'cafe-ernesto', title: '15% em bebidas geladas', price: '15% OFF', validUntil: 'Até domingo' },
+];
